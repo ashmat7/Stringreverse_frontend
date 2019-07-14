@@ -1,6 +1,7 @@
 import { CoursesService } from './courses.service';
 import { Component } from '@angular/core';
 import { stringify } from '@angular/compiler/src/util';
+import string_rev from "../api.js";
 @Component(
     {
         selector: 'courses',

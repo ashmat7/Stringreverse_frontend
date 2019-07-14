@@ -10,14 +10,30 @@ body
    align-items: center;
    padding-top: 40px;
    padding-bottom: 40px;
-   background-color: #f5f5f5;
+   background-color:  #D3D3D3; 
    display:flex;
    justify-content: center;
    align-content: center;
    flex-direction:column;
 }
-#particle-js
-{
-    height:100%;
-    background: #f00;
-}
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    height: 100%;
+  }
+  
+  body {
+    background: linear-gradient(15deg,  #0073e6 50% , #004d99 50.1%);
+  }
