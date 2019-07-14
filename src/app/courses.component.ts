@@ -10,7 +10,7 @@ import string_rev from "../api.js";
         <br />
         <br />
         <div style="text-align:center;">
-        <button (click)="onSave($event)" [style.backgroundColor]="isActive ? 'blue' : 'white' " class="btn btn-primary" [class.active]="isActive">Press Enter and Save</button>
+        <button (click)="onSave($event)" [style.backgroundColor]="isActive ? 'blue' : 'white' " class="btn btn-primary" [class.active]="isActive">Press Enter and Submit</button>
         </div>
         `
     }
@@ -22,11 +22,15 @@ export class CoursesComponent
     isActive=true;
     onSave()
     {
-        console.log(this.string);
+        
+        var b=string_rev(this.string);
+        console.log(b);
     }
     onKeyUp()
     {
-        console.log(this.string);
+        
+        var b=string_rev(this.string);
+        console.log(b);
     }
     
 }

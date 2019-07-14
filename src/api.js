@@ -10,7 +10,7 @@ const string_rev = string => {
       }
     })
     .then(response => {
-      // console.log(response);
+      console.log(response);
       return response.data.string;
     });
 
