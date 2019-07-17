@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "localhost:8000/api/";
+const BASE_URL = "http://localhost:8000/api/";
 
 const string_rev = string => {
   var promise = axios
